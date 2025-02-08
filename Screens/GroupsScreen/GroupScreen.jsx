@@ -1,9 +1,11 @@
 import { View, Text ,StyleSheet,ScrollView,TextInput,SafeAreaView} from 'react-native'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import COLORS from "../../Constants/Colors";
 import Chatthumbnail from '../../components/Chatthumbnail';
 import { AntDesign, MaterialIcons } from '@expo/vector-icons';
 export default function GroupScreen() {
+
+
   return (
     <SafeAreaView>
     <ScrollView style={styles.container}>
@@ -39,6 +41,7 @@ export default function GroupScreen() {
 
 const styles=StyleSheet.create(
   {
+    
    searchchats:{
      width:"100%",
      margin:10,

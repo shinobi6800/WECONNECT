@@ -3,8 +3,10 @@ import { StyleSheet, Text, View } from "react-native";
 import MainNavigation from "./Navigations/MainNavigation";
 import COLORS from "./Constants/Colors";
 import SignUpScreen from "./Screens/AuthScreen/SignUpScreen";
+import LoginScreen from "./Screens/AuthScreen/LoginScreen";
 
 export default function App() {
+  const logged =false;
   return (
     <NavigationContainer>
       <View style={styles.container}>

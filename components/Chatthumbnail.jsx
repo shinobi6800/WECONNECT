@@ -6,7 +6,7 @@ import { Image } from 'expo-image';
 export default function Chatthumbnail() {
   const navigation =useNavigation();
   return (
-    <TouchableOpacity >
+    <TouchableOpacity  >
       <View style={styles.Container}>
       <View style={styles.ChatContainer}>
           <View style={styles.ChatThumb}>

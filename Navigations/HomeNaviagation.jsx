@@ -8,7 +8,7 @@ import LoginScreen from "../Screens/AuthScreen/LoginScreen"
 export default function HomeNaviagation() {
     const Stack=createStackNavigator();
   return (
-    <Stack.Navigator initialRouteName='HomeChats' screenOptions={{
+    <Stack.Navigator initialRouteName='SignUp' screenOptions={{
       headerShown:false,
       headershowTitle:false,
       }}>

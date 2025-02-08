@@ -32,7 +32,8 @@ const styles= StyleSheet.create({
     alignItems:"center",
     padding:10,
     width:"max",
-    height:"100%"
+    height:"100%",
+    backgroundImage:
    },
    form:{
      backgroundColor:COLORS.MILDGREEN ,
