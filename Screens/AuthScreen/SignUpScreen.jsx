@@ -1,11 +1,16 @@
 import { View, Text, SafeAreaView, TextInput ,StyleSheet, KeyboardAvoidingView} from 'react-native'
 import React from 'react'
+import { AntDesign } from '@expo/vector-icons'
 
 export default function SignUpScreen() {
   return (
+    <KeyboardAvoidingView>
      <SafeAreaView >
-      <KeyboardAvoidingView style={styles.container}>
+      <View style={styles.container}>
+        <AntDesign name='aliwangwang-o1' size={56} color={COLORS.MILDGREEN} />
+        <Text style={{fontSize:15,padding:5,margin:5}}>WECONNECT</Text>
         <View style={styles.form}>
+          <Text style={{fontSize:30,color:COLORS.WHITE,fontWeight:900, textAlign:'center',padding:5,}}>Welcome, Sign Up</Text>
         <View>
         <Text style={styles.labels}>Email</Text>
         <TextInput placeholder='Type your email' style={styles.inputs}/>
@@ -17,10 +22,12 @@ export default function SignUpScreen() {
         <Text style={styles.labels}>Fullname</Text>
         <TextInput placeholder='Enter your FullName' style={styles.inputs}/>
       </View>
+      <Text style={{fontSize:20,color:COLORS.WHITE,fontWeight:200, textAlign:'center',padding:15,}}>Already Have an Account ?</Text>
+      <Text style={{fontSize:20,color:COLORS.WHITE,fontWeight:1000, textAlign:'center',padding:15,backgroundColor:"black",borderRadius:10}}>Login</Text>
         </View>
-      </KeyboardAvoidingView>
-  
+        </View>
      </SafeAreaView>
+     </KeyboardAvoidingView>
   )
 }
 const styles= StyleSheet.create({
@@ -33,12 +40,11 @@ const styles= StyleSheet.create({
     padding:10,
     width:"max",
     height:"100%",
-    backgroundImage:
    },
    form:{
      backgroundColor:COLORS.MILDGREEN ,
      padding:24,
-     margin:55,
+     margin:10,
      borderRadius:12,
    },
    labels:{
