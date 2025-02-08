@@ -23,7 +23,6 @@ export default function HomeScreen() {
         </View>
       </View>
       <View style={styles.searchchats}>
-        <AntDesign name='search1' color={COLORS.MILDGREEN} size={24}/>
         <TextInput placeholder='Search Chats' style={styles.searchinput} />
       </View>
       {/* filtertabs */}
@@ -50,7 +49,8 @@ const styles=StyleSheet.create(
       padding:20,
       display:"flex",
       justifyContent:"center",
-      alignItems:"end",
+      alignItems:"center",
+      flexDirection:"row",
       height:20,
       // backgroundColor:"red"
     },
@@ -60,6 +60,7 @@ const styles=StyleSheet.create(
       marginTop:10,
       width:"95%",
       marginBottom:10,
+      marginRight:10,
       borderRadius:12,
       color:COLORS.COOL,
     }
@@ -78,7 +79,7 @@ const styles=StyleSheet.create(
       container:{
         backgroundColor:COLORS.PRIMARYBG,
         // color:COLORS.WHITE,
-        marginTop:60,
+        marginTop:0,
         height:"100%",
       },
        header:{

@@ -1,10 +1,10 @@
 import { View, Text ,StyleSheet, TouchableOpacity} from 'react-native'
 import React from 'react'
 import { AntDesign } from '@expo/vector-icons'
-import  useNavigation  from '@react-navigation/native'
+import  {useNavigation} from '@react-navigation/native'
 import { Image } from 'expo-image';
 export default function Chatthumbnail() {
-  const navigation =useNavigation;
+  const navigation =useNavigation();
   return (
     <TouchableOpacity >
       <View style={styles.Container}>
