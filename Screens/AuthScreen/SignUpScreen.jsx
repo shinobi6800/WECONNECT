@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView, TextInput ,StyleSheet, KeyboardAvoidingView} from 'react-native'
+import { View, Text, SafeAreaView, TextInput ,StyleSheet, KeyboardAvoidingView, TouchableOpacity} from 'react-native'
 import React from 'react'
 import { AntDesign } from '@expo/vector-icons'
 
@@ -22,8 +22,12 @@ export default function SignUpScreen() {
         <Text style={styles.labels}>Fullname</Text>
         <TextInput placeholder='Enter your FullName' style={styles.inputs}/>
       </View>
-      <Text style={{fontSize:20,color:COLORS.WHITE,fontWeight:200, textAlign:'center',padding:15,}}>Already Have an Account ?</Text>
-      <Text style={{fontSize:20,color:COLORS.WHITE,fontWeight:1000, textAlign:'center',padding:15,backgroundColor:"black",borderRadius:10}}>Login</Text>
+      <TouchableOpacity>
+      <Text style={{fontSize:20,color:"grey",fontWeight:200, textAlign:'center',padding:15,}}>Already Have an Account ?</Text>
+      </TouchableOpacity>
+      <TouchableOpacity>
+      <Text style={{fontSize:20,color:COLORS.WHITE,fontWeight:1000, textAlign:'center',padding:15,backgroundColor:"#262626",borderRadius:10}}>Sign up</Text>
+      </TouchableOpacity>
         </View>
         </View>
      </SafeAreaView>

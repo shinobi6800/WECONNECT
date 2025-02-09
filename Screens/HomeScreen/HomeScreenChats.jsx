@@ -1,4 +1,4 @@
-import { View, Text,StyleSheet, ScrollView, SafeAreaView, TouchableOpacity, TextInput } from 'react-native'
+import { View, Text,StyleSheet, ScrollView, SafeAreaView, TouchableOpacity, TextInput, Modal } from 'react-native'
 import React from 'react'
 import COLORS from "../../Constants/Colors";
 import Chatthumbnail from '../../components/Chatthumbnail';
@@ -25,10 +25,10 @@ export default function HomeScreen() {
       <View style={styles.searchchats}>
         <TextInput placeholder='Search Chats' style={styles.searchinput} />
       </View>
+
       {/* filtertabs */}
   
       {/* <View style={{borderBottomWidth:1,borderBottomColor:COLORS.WHITE}}></View> */}
-       {/* ChatThumbs */}
        <View>
         <Chatthumbnail/>
        </View>
@@ -43,6 +43,7 @@ export default function HomeScreen() {
 
 const styles=StyleSheet.create(
    {
+    
     searchchats:{
       width:"100%",
       margin:10,
