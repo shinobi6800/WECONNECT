@@ -10,7 +10,6 @@ export default function Chatthumbnail() {
       <View style={styles.Container}>
       <View style={styles.ChatContainer}>
           <View style={styles.ChatThumb}>
-          {/* <AntDesign name='smile-circle' size={48} color={"yellow"}/> */}
           <Image
            source="https://picsum.photos/seed/696/3000/2000"
            contentFit="cover"
