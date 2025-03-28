@@ -1,4 +1,4 @@
-# WECCONECT
+# WECONECT
 # 📱 MyApp - Real-Time Mobile Experience 🚀
 
 ![Weconnect Banner](assets/banner.webp)
